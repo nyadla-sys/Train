@@ -116,7 +116,7 @@ downloaded you won't need to do this again.
 In this section we discuss spectrograms, the preprocessed speech input to the
 model. Here's an illustration of the process:
 
-![spectrogram diagram](![Spectrogram LSTM](https://user-images.githubusercontent.com/69593646/124989167-b0baa100-dff3-11eb-8f54-28017fc85aa4.png))
+![spectrogram diagram](![Spectrogram LSTM](![Spectrogram LSTM](https://user-images.githubusercontent.com/69593646/124992605-0c872900-dff8-11eb-8b90-1af5cb359b0f.png)))
 
 The model doesn't take in raw audio sample data, instead it works with
 spectrograms which are two dimensional arrays that are made up of slices of
