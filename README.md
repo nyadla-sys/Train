@@ -69,12 +69,12 @@ includes the following 3 model files:
 
 | Name           | Format       | Target Framework | Target Device             |
 | :------------- | :----------- | :--------------- | :------------------------ |
-| `model.pb`     | Frozen       | TensorFlow       | Large-Scale/Cloud/Servers |
+| `micro_speech_lstm_model.pb`     | Frozen       | TensorFlow       | Large-Scale/Cloud/Servers |
 :                : GraphDef     :                  :                           :
-| `model.tflite` | Fully        | TensorFlow Lite  | Mobile Devices            |
+| `micro_speech_lstm_model.tflite` | Fully        | TensorFlow Lite  | Mobile Devices            |
 : *(<20 kB)*     : Quantized*   :                  :                           :
 :                : TFLite Model :                  :                           :
-| `model.cc`     | C Source     | TensorFlow Lite  | Microcontrollers          |
+| `micro_speech_lstm_model.cc`     | C Source     | TensorFlow Lite  | Microcontrollers          |
 :                : File         : for              :                           :
 :                :              : Microcontrollers :                           :
 
@@ -128,10 +128,10 @@ created by running an FFT across a 30ms section of the audio sample data. The
 input samples are treated as being between -1 and +1 as real values (encoded as
 -32,768 and 32,767 in 16-bit signed integer samples).
 
-This results in an FFT with 256 entries. Every sequence of six entries is
+This results in an FFT with 257 entries. Every sequence of six entries is
 averaged together, giving a total of 43 frequency buckets in the final slice.
 The results are stored as unsigned eight-bit values, where 0 represents a real
-number of zero, and 255 represents 127.5 as a real number.
+number of zero, and 256 represents 128 as a real number.
 
 Each adjacent frequency entry is stored in ascending memory order (frequency
 bucket 0 at data[0], bucket 1 at data[1], etc). The window for the frequency
