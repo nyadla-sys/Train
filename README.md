@@ -32,7 +32,7 @@ tutorial.
 -   [Model Architecture](#model-architecture)
 -   [Dataset](#dataset)
 -   [Preprocessing Speech Input](#preprocessing-speech-input)
--   [Other Training Methods](#other-training-methods)
+
 
 ## Overview
 
@@ -87,7 +87,7 @@ input(s) and output(s) which remain float.* -->
 
 ## Model Architecture
 
-This is a simple model comprising of a Convolutional 2D layer, a Fully Connected
+This is a simple model comprising of a Unidirectional Sequence LSTM layer, a Reshape layer, a Fully Connected
 Layer or a MatMul Layer (output: logits) and a Softmax layer
 (output: probabilities) as shown below. Refer to the [`tiny_conv`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/speech_commands/models.py#L673)
 model architecture.
