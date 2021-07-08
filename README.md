@@ -41,7 +41,7 @@ tutorial.
 2.  Dataset Type: **Mini_Speech_Commands**
 3.  Deep Learning Framework: **TensorFlow 2.5.0**
 4.  Language: **Python 3.7**
-5.  Model Size: **<500 kB**
+5.  Model Size: **<150 kB**
 6.  Model Category: **Multiclass Classification**
 
 ## Training
@@ -86,7 +86,7 @@ input(s) and output(s) which remain float.* -->
 
 This is a simple model comprising of a Unidirectional Sequence LSTM layer, a Reshape layer, a Fully Connected
 Layer or a MatMul Layer (output: logits) and a Softmax layer
-(output: probabilities) as shown below. Refer to the [`tiny_conv`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/speech_commands/models.py#L673)
+(output: probabilities) as shown below. Refer to the below
 model architecture.
 
 ![micro_speech_lstm_model](https://user-images.githubusercontent.com/69593646/124989653-363e5100-dff4-11eb-87e1-b3977e504488.png)
@@ -103,8 +103,7 @@ simpler model for accurate results.
 
 ## Dataset
 
-The Mini Speech Commands Dataset. ([Download Link]([Uploading mini_speech_commands.zip…]()),
-[Paper](https://arxiv.org/abs/1804.03209)) consists of over 8,000 WAVE audio
+The Mini Speech Commands Dataset. ([Download Link]([Uploading mini_speech_commands.zip…])) consists of over 8,000 WAVE audio
 files of people saying 8 different words. This data was collected by
 Google and released under a CC BY license. You can help improve it by
 contributing five minutes of your own voice. The archive is over 2GB, so this
