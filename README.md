@@ -89,7 +89,7 @@ Layer or a MatMul Layer (output: logits) and a Softmax layer
 (output: probabilities) as shown below. Refer to the [`tiny_conv`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/speech_commands/models.py#L673)
 model architecture.
 
-![model_architecture.png](![micro_speech_lstm_model](https://user-images.githubusercontent.com/69593646/124989653-363e5100-dff4-11eb-87e1-b3977e504488.png))
+![micro_speech_lstm_model](https://user-images.githubusercontent.com/69593646/124989653-363e5100-dff4-11eb-87e1-b3977e504488.png)
 
 *This image was derived from visualizing the 'micro_speech_model.tflite' file in
 [Netron](https://github.com/lutzroeder/netron)*
