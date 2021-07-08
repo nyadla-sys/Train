@@ -50,7 +50,7 @@ Train the model in the cloud using Google Colaboratory.
 
 <table class="tfo-notebook-buttons" align="left">
   <td>
-    <a target="_blank" href="https://colab.research.google.com/drive/145xK0GYNObJyasvOebWmQyijf8P33KmD?usp=sharing"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" />Google Colaboratory</a>
+    <a target="_blank" href="https://colab.research.google.com/github/arjunk23/Train/blob/main/lstm_train_micro_speech_model.ipynb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png" />Google Colaboratory</a>
   </td>
 
 
