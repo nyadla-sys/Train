@@ -57,8 +57,6 @@ Train the model in the cloud using Google Colaboratory.
 
 *Estimated Training Time: ~2 Minutes.*
 
-For more options, refer to the [Other Training Methods](#other-training-methods)
-section.
 
 ## Trained Models
 
@@ -71,12 +69,12 @@ includes the following 3 model files:
 
 | Name           | Format       | Target Framework | Target Device             |
 | :------------- | :----------- | :--------------- | :------------------------ |
-| `model.pb`     | Frozen       | TensorFlow       | Large-Scale/Cloud/Servers |
+| `micro_speech_lstm_model.pb`     | Frozen       | TensorFlow       | Large-Scale/Cloud/Servers |
 :                : GraphDef     :                  :                           :
-| `model.tflite` | Fully        | TensorFlow Lite  | Mobile Devices            |
+| `micro_speech_lstm_model.tflite` | Fully        | TensorFlow Lite  | Mobile Devices            |
 : *(<500 kB)*     : Quantized*   :                  :                           :
 :                : TFLite Model :                  :                           :
-| `model.cc`     | C Source     | TensorFlow Lite  | Microcontrollers          |
+| `micro_speech_lstm_model.cc`     | C Source     | TensorFlow Lite  | Microcontrollers          |
 :                : File         : for              :                           :
 :                :              : Microcontrollers :                           :
 
